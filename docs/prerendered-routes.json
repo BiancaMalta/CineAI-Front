@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/Kaua-Novaes/CineAI-Front": {},
+    "/Kaua-Novaes/CineAI-Front/avaliacoes": {},
+    "/Kaua-Novaes/CineAI-Front/cadastro": {},
+    "/Kaua-Novaes/CineAI-Front/home": {},
+    "/Kaua-Novaes/CineAI-Front/indicacoes": {},
+    "/Kaua-Novaes/CineAI-Front/login": {}
+  }
+}

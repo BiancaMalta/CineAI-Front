@@ -1,0 +1,2 @@
+export default `:root{--cor-fundo: #363333;--cor-primaria: #ff39ce;--cor-primaria-hover: #6c345d;--texto-branco: #ffffff;--texto-cinza: #999999}
+`;
