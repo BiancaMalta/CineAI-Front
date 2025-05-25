@@ -43,7 +43,7 @@ export class ApiService {
   }
   //buscar todas as avaliações de um usuário
   get_avaliacoes_usuario(user_id: number): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/usuarios/${user_id}/avaliacoes`);
+    return this.http.get<any>(`https://cineai-njbu.onrender.com/usuarios/${user_id}/avaliacoes`);
   }
   // registrar avaliação de filme (caso ainda não tenha)
   registrar_avaliacao(usuario_id: number, filme_id: number, nota: number, comentario?: string): Observable<any> {
@@ -52,10 +52,10 @@ export class ApiService {
       nota, 
       comentario: comentario || '' 
     };
-    return this.http.post<any>(`${this.baseUrl}/movies/${filme_id}/avaliar`, body);
+    return this.http.post<any>(`https://cineai-njbu.onrender.com/movies/${filme_id}/avaliar`, body);
   }
   // buscar avaliações de um filme específico
   get_avaliacoes_filme(filme_id: number): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/movies/${filme_id}/avaliacoes`);
+    return this.http.get<any>(`https://cineai-njbu.onrender.com/movies/${filme_id}/avaliacoes`);
   }
 }
